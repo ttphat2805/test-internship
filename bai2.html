@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Intership </title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/table.css">
+
+</head>
+
+<body>
+    <div class="app">
+        <header class="header">
+            <nav>
+                <ul class="menuItems">
+                    <li><a href='./index.html'>Bài 1</a></li>
+                    <li><a href='./bai2.html'>Bài 2</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="ex">
+            <h1>Bài 2</h1>
+        <div class="lab flex">
+            <div class="ex ex2">
+                <p>Thông tin liên hệ</p>
+                <p class="kq_ex2">
+                    <table class="styled-table">
+                        <thead>
+                            <tr>
+                                <th>STT</th>
+                                <th>Họ tên</th>
+                                <th>Email</th>
+                                <th>Số điện thoại</th>
+                            </tr>
+                        </thead>
+                        <tbody class="renderContact">
+                        </tbody>
+                    </table>
+                </p>
+            </div>
+            <div class="ex addproduct">
+                <p>Form liên hệ</p>
+                <div class="form-group">
+                    <label>Họ & tên</label>
+                    <input type="text" class="form-control" id="fullname" placeholder="Họ & tên...">
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="text" type="email" id="email" class="form-control" placeholder="Email của bạn...">
+                </div>
+                <div class="form-group">
+                    <label>Số điện thoại:</label>
+                    <input type="text" id="mobile" class="form-control" placeholder="Số điện thoại...">
+                </div>
+                <button class="btn btn-success" id="btnAdd" style="margin-bottom: 20px;">Thêm +</button>
+                <button class="btn btn-clear" id="btnClear" style="margin-bottom: 20px;">Xóa</button>
+            </div>
+            <br>
+        </div>
+    </div>
+
+    <script src="./assets/bai2.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+ ::-webkit-scrollbar {
+    width: 10px;
+}
+
+ ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: linear-gradient(to right, #5f27cd, #00d2d3);
+    border-radius: 10px;
+}
+
+body {
+    font-family: "Quicksand", sans-serif;
+    background-image: url('https://img.freepik.com/free-vector/white-abstract-background-design_23-2148825582.jpg?t=st=1647412107~exp=1647412707~hmac=2c5da8ec874be3a5212dad457bee023e92b3c41ddb58802dbe588544d7fbaed9&w=996');
+    background-size: cover;
+}
+
+.app {
+    overflow-y: hidden;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+nav {
+    background: #fff!important;
+    z-index: 3;
+    padding: 10px 10px;
+    border-radius: 5px;
+    box-shadow: 5px 10px 20px -17px rgba(0, 0, 0, 0.685);
+}
+
+nav .menuItems {
+    list-style: none;
+    display: flex;
+}
+
+nav .menuItems li {
+    margin: 20px 40px;
+}
+
+.header {
+    margin-bottom: 40px;
+}
+
+nav .menuItems li a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: normal;
+    font-weight: 500;
+    color: #333;
+    position: relative;
+}
+
+nav .menuItems li a::after {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 3px;
+    background: #273c75;
+    transition: width .3s;
+}
+
+nav .menuItems li a:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+.lab {
+    padding-left: 40px;
+    z-index: 1;
+}
+
+h2 {
+    width: 100px;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 10px;
+}
+
+ul {
+    margin-left: 20px;
+    list-style: decimal-leading-zero;
+}
+
+p,
+ul li {
+    color: #192a56;
+    line-height: 1;
+    font-weight: 700;
+    font-size: 1.6rem;
+    margin: 10px;
+    margin-left: 0;
+}
+
+.ex {
+    display: inline-block;
+    max-width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border: 1px solid;
+    border-color: #e5e5e5;
+    border-radius: 30px;
+    padding: 15px;
+    background: #cad3c88c;
+    margin: 16px;
+}
+
+ul li {
+    margin: 10px;
+    margin-left: 20px;
+}
+
+.shape {
+    position: absolute;
+    right: 2%;
+    top: 25%;
+    width: 35rem;
+    height: 30rem;
+    background: linear-gradient(45deg, #3023AE 0%, #f09 100%);
+    border-radius: 42% 58% 25% 75% / 56% 45% 55% 44%;
+    animation: suspended 2s ease-in-out infinite alternate;
+}
+
+@keyframes suspended {
+    0% {
+        transform: translateY(0)
+    }
+    to {
+        transform: translateY(50px)
+    }
+}
+
+.addproduct {
+    width: 500px;
+}
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-top: 10px;
+
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.btn.btn-primary {
+    color: #508aeb;
+    border-color: #508aeb;
+}
+
+.btn.btn-primary:hover {
+    color: #fff;
+    background: #508aeb;
+}
+
+.btn.btn-clear {
+    background-color: #6c757d;
+    border: 1px solid #6c757d;
+}
+
+.btn.btn-clear:hover {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.btn.btn-success {
+    color: #fff;
+    background-color: #54cc96;
+    border: 1px solid #54cc96;
+}
+
+.btn.btn-success:hover {
+    background-color: #40c68a;
+    border: 1px solid #40c68a;
+}
+
+label {
+    display: inline-block;
+    margin: 0.5rem 0;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 15px;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    outline: none;
+}
+
+.form-control:focus {
+    border-color: #508aeb;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.flex {
+    display: flex;
+}
+
+
